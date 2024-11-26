@@ -2,6 +2,10 @@ services:
   mosquitto:
     build:
       context: .
+      args:
+        - USER=mqtt
+        - GID=1001
+        - UID=1002
     volumes:
       - type: bind
         source: ./config/
