@@ -2,7 +2,7 @@ services:
   mosquitto:
     build:
       args:
-        GID: [GID]
-        UID: [UID]
-        USER: [USER]
-    user: [UID]:[GID]
+        GID: 1001
+        UID: 1002
+        USER: mqtt
+    user: 1001:1002
