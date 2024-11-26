@@ -10,9 +10,10 @@ services:
       # - type: bind
         # source: ./config/
         # target: /mosquitto/config/
-      - type: bind
-        source: ./log/
-        target: /mosquitto/log/
+      # - type: bind
+        # source: ./log/
+        # target: /mosquitto/log/
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
       - type: volume
         source: data
         target: /mosquitto/data/
