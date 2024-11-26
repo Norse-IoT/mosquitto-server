@@ -7,9 +7,9 @@ services:
         - GID=1001
         - UID=1002
     volumes:
-      - type: bind
-        source: ./config/
-        target: /mosquitto/config/
+      # - type: bind
+        # source: ./config/
+        # target: /mosquitto/config/
       - type: bind
         source: ./log/
         target: /mosquitto/log/
